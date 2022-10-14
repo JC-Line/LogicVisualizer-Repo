@@ -88,8 +88,8 @@
                   
 
                   // parsing and collecting nodes and edges from the python
-                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": 1, "label": "Demo570", "shape": "dot"}]);
-                  edges = new vis.DataSet([]);
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": 3, "label": "act3", "shape": "dot", "size": 75}, {"color": "#97c2fc", "id": 4, "label": "act4", "shape": "dot", "size": 75}, {"color": "#97c2fc", "id": 5, "label": "act5", "shape": "dot", "size": 75}, {"color": "#97c2fc", "id": 6, "label": "act6", "shape": "dot", "size": 75}, {"color": "#97c2fc", "id": 7, "label": "act7", "shape": "dot", "size": 75}, {"color": "#97c2fc", "id": 1, "image": "https://m.media-amazon.com/images/I/A1YG9F6BL8L.jpg", "label": "Demo570", "shape": "circularImage", "size": 100, "title": "Demo Activity"}, {"color": "#97c2fc", "id": 2, "image": "https://www.agronomy.org/files/images/news/td.in_.out_.3-800x600.jpg", "label": "Drg570", "shape": "circularImage", "size": 100, "title": "Drainage Activity"}]);
+                  edges = new vis.DataSet([{"from": 3, "to": 4}, {"from": 4, "to": 5}, {"from": 5, "to": 6}, {"from": 6, "to": 7}, {"from": 1, "title": "Demo570 - Drg570 [5]", "to": 2}, {"from": 1, "to": 4}, {"from": 2, "to": 6}]);
 
                   nodeColors = {};
                   allNodes = nodes.get({ returnType: "Object" });
